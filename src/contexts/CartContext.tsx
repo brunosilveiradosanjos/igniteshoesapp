@@ -20,7 +20,7 @@ type CartContextProviderProps = {
 export const CartContext = createContext<CartContextDataProps>({} as CartContextDataProps);
 
 export function CartContextProvider({ children }: CartContextProviderProps) {
-  const [cart, setCart] = useState<StorageCartProps[]>([]);
+  const [cart, setCart] = useState<StorageCartProps[]>([])
 
   async function addProductCart(newProduct: StorageCartProps) {
     try {
